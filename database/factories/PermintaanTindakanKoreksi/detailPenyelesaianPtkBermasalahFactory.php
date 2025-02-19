@@ -17,8 +17,8 @@ class detailPenyelesaianPtkBermasalahFactory extends Factory
     public function definition(): array
     {
         return [
-            'id_form' => $this->faker->numberBetween(1, 20),
-            'no_rekaman_ptk' => $this->faker->uuid,
+            'id_form' => \App\Models\PermintaanTindakanKoreksi\formPenyelesaianPtkBermasalah::factory(),
+            'no_rekaman_ptk' => $this->fake()->regexify("[A-Z]{3}") . '-' . fake()->regexify("[0-9]{5}"),
             'tanggal_ptk' => $this->faker->date,
             'keterangan' => $this->faker->text,
         ];

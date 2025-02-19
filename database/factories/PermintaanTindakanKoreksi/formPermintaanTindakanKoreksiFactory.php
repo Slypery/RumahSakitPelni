@@ -11,7 +11,7 @@ class formPermintaanTindakanKoreksiFactory extends Factory
     public function definition(): array
     {
         return [
-            'no_rekaman_ptk' => $this->faker->unique()->uuid,
+            'no_rekaman_ptk' => $this->fake()->regexify("[A-Z]{3}") . '-' . fake()->regexify("[0-9]{5}"),
             'tanggal_ptk' => $this->faker->date,
             'unit_kerja_penerbit_ptk' => $this->faker->company,
             'unit_kerja_penerima_ptk' => $this->faker->company,
@@ -28,7 +28,6 @@ class formPermintaanTindakanKoreksiFactory extends Factory
             'no_ptk_baru' => $this->faker->optional()->uuid,
             'nama_verifier' => $this->faker->optional()->name,
             'tanggal_verifikasi' => $this->faker->optional()->date,
-            'is_signed' => $this->faker->boolean,
             'signed_at' => $this->faker->optional()->date,
             'document_scan' => $this->faker->optional()->url,
             'created_by' => 1,

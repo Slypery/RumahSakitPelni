@@ -1,9 +1,11 @@
 <?php
 
-namespace Database\Seeders;
+namespace Database\Seeders\AuditInternal;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\AuditInternal\detailLaporanAuditInternal;
+
 
 class DetailLaporanAuditInternalSeeder extends Seeder
 {
@@ -12,6 +14,6 @@ class DetailLaporanAuditInternalSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        detailLaporanAuditInternal::factory()->count(20)->create();
     }
 }

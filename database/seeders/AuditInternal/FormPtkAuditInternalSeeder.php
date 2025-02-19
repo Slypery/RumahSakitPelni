@@ -1,9 +1,10 @@
 <?php
 
-namespace Database\Seeders;
+namespace Database\Seeders\AuditInternal;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\AuditInternal\formPtkAuditInternal;
 
 class FormPtkAuditInternalSeeder extends Seeder
 {
@@ -12,6 +13,6 @@ class FormPtkAuditInternalSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        formPtkAuditInternal::factory()->count(20)->create();
     }
 }

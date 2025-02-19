@@ -18,7 +18,6 @@ return new class extends Migration
             $table->json('rekomendasi_pelaksanaan_audit_selanjutnya');
             $table->string('nama_lead_auditor');
             $table->string('nama_vice_president');
-            $table->boolean('is_signed')->default(false);
             $table->date('signed_at')->nullable();
             $table->string('document_scan')->nullable();
             $table->foreignId('created_by')->constrained('users');

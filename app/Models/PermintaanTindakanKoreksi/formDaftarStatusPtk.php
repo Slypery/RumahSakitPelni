@@ -15,7 +15,6 @@ class formDaftarStatusPtk extends Model
         'no_rekaman_dokumen',
         'nama_ciso',
         'nama_vice_president',
-        'is_signed',
         'signed_at',
         'document_scan',
         'created_by'

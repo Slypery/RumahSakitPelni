@@ -14,6 +14,6 @@ class FormDaftarDokumenEksternalSeeder extends Seeder
      */
     public function run(): void
     {
-        FormDaftarDokumenEksternalFactory::new()->count(50)->create();
+        FormDaftarDokumenEksternalFactory::new()->count(20)->create();
     }
 }

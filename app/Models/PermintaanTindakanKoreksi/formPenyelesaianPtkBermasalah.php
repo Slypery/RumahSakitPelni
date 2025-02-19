@@ -17,7 +17,6 @@ class formPenyelesaianPtkBermasalah extends Model
         'detail_penyelesaian_kasus',
         'nama_ciso',
         'nama_direktur_utama',
-        'is_signed',
         'signed_at',
         'document_scan',
         'created_by'

@@ -12,7 +12,6 @@ return new class extends Migration {
             $table->string('no_rekaman_dokumen')->unique();
             $table->string('nama_ciso');
             $table->string('nama_vice_president');
-            $table->boolean('is_signed')->default(false);
             $table->date('signed_at')->nullable();
             $table->string('document_scan')->nullable();
             $table->foreignId('created_by')->constrained('users');

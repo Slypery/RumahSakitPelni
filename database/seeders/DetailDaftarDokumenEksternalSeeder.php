@@ -16,7 +16,7 @@ class DetailDaftarDokumenEksternalSeeder extends Seeder
     public function run(): void
     {
         if(!FormDaftarDokumenEksternal::count()){
-            FormDaftarDokumenEksternalFactory::new()->count(50)->create();
+            FormDaftarDokumenEksternalFactory::new()->count(20)->create();
         }
         foreach(FormDaftarDokumenEksternal::all() as $row){
             DetailDaftarDokumenEksternalFactory::new()->count(3)->create([

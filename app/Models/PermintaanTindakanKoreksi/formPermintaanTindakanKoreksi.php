@@ -29,7 +29,6 @@ class formPermintaanTindakanKoreksi extends Model
         'no_ptk_baru',
         'nama_verifier',
         'tanggal_verifikasi',
-        'is_signed',
         'signed_at',
         'document_scan',
         'created_by'

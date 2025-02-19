@@ -18,7 +18,6 @@ return new class extends Migration
             $table->date('tanggal_audit');
             $table->string('nama_auditor');
             $table->string('nama_lead_auditor');
-            $table->boolean('is_signed')->default(false);
             $table->date('signed_at')->nullable();
             $table->string('document_scan')->nullable();
             $table->foreignId('created_by')->constrained('users');

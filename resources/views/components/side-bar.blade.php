@@ -65,8 +65,8 @@
             </svg>
         </button>
         <div data-sidebar-dropdown-items class="flex flex-col opacity-30 ml-10 mr-5 gap-2 border-l border-gray-500 max-h-0 overflow-hidden transition-all duration-200">
-            <a href="{{ route('05.01.index') }}" class="{{ $pageName == '05.01 Daftar Peraturan Keamanan Informasi' ? 'sidebar-item-active' : '' }} pl-2 text-sm text-white/70 hover:underline hover:text-white/90"><span class="font-bold">05.01</span> Daftar Peraturan Keamanan Informasi</a>
-            <a href="{{ route('05.02.index') }}" class="{{ $pageName == '05.02 Daftar Pemenuhan Peraturan' ? 'sidebar-item-active' : '' }} pl-2 text-sm text-white/70 hover:underline hover:text-white/90"><span class="font-bold">05.02</span> Daftar Pemenuhan Peraturan</a>
+            {{-- <a href="{{ route('05.01.index') }}" class="{{ $pageName == '05.01 Daftar Peraturan Keamanan Informasi' ? 'sidebar-item-active' : '' }} pl-2 text-sm text-white/70 hover:underline hover:text-white/90"><span class="font-bold">05.01</span> Daftar Peraturan Keamanan Informasi</a> --}}
+            {{-- <a href="{{ route('05.02.index') }}" class="{{ $pageName == '05.02 Daftar Pemenuhan Peraturan' ? 'sidebar-item-active' : '' }} pl-2 text-sm text-white/70 hover:underline hover:text-white/90"><span class="font-bold">05.02</span> Daftar Pemenuhan Peraturan</a> --}}
             <a href="#" class="pl-2 text-sm text-white/70 hover:underline hover:text-white/90"><span class="font-bold">05.03</span> Daftar Distribusi Peraturan</a>
         </div>
     </div>

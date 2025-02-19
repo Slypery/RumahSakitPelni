@@ -26,7 +26,6 @@ return new class extends Migration {
             $table->string('no_ptk_baru')->nullable();
             $table->string('nama_verifier')->nullable();
             $table->date('tanggal_verifikasi')->nullable();
-            $table->boolean('is_signed')->default(false);
             $table->date('signed_at')->nullable();
             $table->string('document_scan')->nullable();
             $table->foreignId('created_by')->constrained('users');

@@ -14,7 +14,6 @@ return new class extends Migration {
             $table->text('detail_penyelesaian_kasus');
             $table->string('nama_ciso');
             $table->string('nama_direktur_utama');
-            $table->boolean('is_signed')->default(false);
             $table->date('signed_at')->nullable();
             $table->string('document_scan')->nullable();
             $table->foreignId('created_by')->constrained('users');
